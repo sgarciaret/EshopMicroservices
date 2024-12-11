@@ -400,3 +400,5 @@ FodyWeavers.xsd
 /src/Services/Discount/Discount.Grpc/dicountdb-shm
 /src/Services/Discount/Discount.Grpc/dicountdb-wal
 /src/Services/Discount/Discount.Grpc/discountdb
+/src/Services/Discount/Discount.Grpc/discountdb-shm
+/src/Services/Discount/Discount.Grpc/discountdb-wal
