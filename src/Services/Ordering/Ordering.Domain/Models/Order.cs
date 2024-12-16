@@ -7,7 +7,7 @@
         public CustomerId CustomerId { get; private set; } = default!;
         public OrderName OrderName { get; private set; } = default!;
         public Address ShippingAddress { get; private set; } = default!;
-        public Address BillingAddres { get; private set; } = default!;
+        public Address BillingAddress { get; private set; } = default!;
         public Payment Payment { get; private set; } = default!;
         public OrderStatus Status { get; private set; } = OrderStatus.Pending;
         public decimal TotalPrice
@@ -16,7 +16,7 @@
             private set { }
         }
 
-        public static Order Create(OrderId id, CustomerId customerId, OrderName orderName, Address shippingAddress, Address billingAddres, Payment payment)
+        public static Order Create(OrderId id, CustomerId customerId, OrderName orderName, Address shippingAddress, Address billingAddress, Payment payment)
         {
             var order = new Order
             {
@@ -24,7 +24,7 @@
                 CustomerId = customerId,
                 OrderName = orderName,
                 ShippingAddress = shippingAddress,
-                BillingAddres = billingAddres,
+                BillingAddress = billingAddress,
                 Payment = payment,
                 Status = OrderStatus.Pending
             };
@@ -38,7 +38,7 @@
         {
             OrderName = orderName;
             ShippingAddress = shippingAddress;
-            BillingAddres = billingAddress;
+            BillingAddress = billingAddress;
             Payment = payment;
             Status = status;
 
