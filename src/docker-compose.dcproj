@@ -8,6 +8,8 @@
   </PropertyGroup>
   <PropertyGroup>
     <DockerServiceName>ordering.api</DockerServiceName>
+    <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
+    <DockerServiceUrl>{Scheme}://localhost:{ServicePort}</DockerServiceUrl>
   </PropertyGroup>
   <ItemGroup>
     <None Include="docker-compose.override.yml">

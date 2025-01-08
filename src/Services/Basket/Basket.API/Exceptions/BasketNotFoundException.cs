@@ -4,7 +4,7 @@
     {
         public BasketNotFoundException(string userName) : base("basket", userName)
         {
-            
+
         }
     }
 }
